@@ -1,0 +1,98 @@
+.contact {
+    background: hsl(250, 97%, 57%, 0.6);
+    background: radial-gradient(circle, rgba(77,41,252,0.6) 0%, rgba(147,194,249,0) 100%); 
+    backdrop-filter: blur(1rem);
+
+    padding-inline: 2.5rem;
+    padding-block: 3rem;
+}
+
+.contact h2 {
+    font-family: var(--ff-poppins);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contact > div {
+    display: grid;
+    place-content: center;
+
+    border: 1px solid whitesmoke;   
+    border-radius: 1.5rem;
+    width: fit-content;
+
+    margin: auto;
+    padding-block: 3rem;
+    margin-block: 5rem;
+    padding-inline: 7rem;
+}
+
+.contact div div {
+    display: grid;
+
+    padding-block: 1rem;
+}
+
+.contact div div label {
+    font-family: var(--ff-poppins);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding-block: 1rem;
+}
+
+.contact div div input {
+    font-family: var(--ff-poppins);
+    width: 25rem;
+    border: none;
+    border-radius: 1rem;
+
+    padding-inline: 1rem;
+    padding-block: .75rem;
+
+    background-color: hsl(0, 0%, 96%, .4);
+    backdrop-filter: blur(1rem);
+    color: whitesmoke;
+}
+
+.contact button {
+    font-family: var(--ff-poppins);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    margin-top: 2rem;
+    padding-inline: 2.5rem;
+    padding-block: .75rem;
+
+    width: 100%;
+    margin-inline: auto;
+}
+
+.contact button:is(:hover, :focus) {
+    opacity: .9;
+}
+
+@media only screen and ( width < 45em ) {
+
+    .contact {
+        padding-inline: 1rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contact > div {
+        width: 100%;
+    }
+
+    .contact div div input {
+        width: 19rem;
+    }
+
+}

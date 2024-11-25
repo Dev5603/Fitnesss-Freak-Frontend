@@ -1,0 +1,264 @@
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+}
+
+@keyframes countDownMembers {
+    0% {
+        content: '0';
+        filter: blur(2.5px);
+    }
+
+    5% {
+        content: '0.5';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    20% {
+        content: '1.25';
+    }
+
+    40% {
+        content: '1.5';
+        filter: blur(0);
+    }
+
+    100% {
+        content: '2';
+    }
+}
+
+@keyframes countDownCustomers {
+    0% {
+        content: '0';
+        filter: blur(2.5px);
+    }
+
+    5% {
+        content: '1';
+    }
+
+    10% {
+        content: '2';
+    }
+
+    20% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    100% {
+        content: '5';
+    }
+}
+
+@keyframes countDownReviews {
+    0% {
+        content: '0';
+        filter: blur(2.5px);
+    }
+
+    5% {
+        content: '1';
+    }
+
+    10% {
+        content: '2';
+    }
+
+    20% {
+        content: '4';
+    }
+
+    40% {
+        content: '5';
+    }
+
+    100% {
+        content: '7';
+    }
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90dvh;
+
+    background: hsl(250, 97%, 57%, 0.6);
+    background: radial-gradient(circle, rgba(77,41,252,0.6) 0%, rgba(147,194,249,0) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.header::after {
+    position: absolute;
+    bottom: 0;
+
+    content: '';
+    width: 100%; height: 17.5rem;
+    
+    background-image: linear-gradient(
+        to top,
+        rgb(18, 1, 100),
+        transparent
+    );
+}
+
+.header h1 {
+    font-family: var(--ff-poppins);
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: whitesmoke;
+}
+
+.header__p-main {
+    font-family: var(--ff-poppins);
+    font-size: clamp(3rem, 3.5vw, 7rem);
+    font-weight: bold;
+
+    padding-block: .75rem;
+
+    color: whitesmoke;
+}
+
+.header__p-main span {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        hsl(250, 97%, 57%, 0.6),
+        white,
+        hsl(250, 97%, 57%, 0.6)
+      );
+      
+      background-size: 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+}
+
+.header__p-not-main {
+    font-family: var(--ff-poppins);
+    font-weight: 300;
+    max-width: 45ch;
+
+    padding-block: 2.5rem;
+
+    color: azure;
+}
+
+.header__grid-left {
+    padding-block-start: 15rem;
+    padding-inline-start: 5rem;
+}
+
+.header__grid-right {
+    position: relative;
+}
+
+.header__grid-right > img {
+    position: absolute;
+    bottom: 0; right: 12.5%; height: 57.5rem;
+    object-fit: cover;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-family: var(--ff-poppins);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-block-start: 3rem;
+    padding-block-end: 3.5rem;
+
+    color: whitesmoke;
+}
+
+.header__info div {
+    padding-block: 1.25rem;
+}
+
+.header__info [data-info='members']::before {
+    content: '';
+    animation: countDownMembers 2s ease-out infinite;
+}
+
+.header__info [data-info='customers']::before {
+    content: '';
+    animation: countDownCustomers 2s ease-out infinite;
+}
+
+.header__info [data-info='reviews']::before {
+    content: '';
+    animation: countDownReviews 2s ease-out infinite;
+}
+
+.header__info [data-info='members'],
+.header__info [data-info='customers'],
+.header__info [data-info='reviews'] {
+    font-size: 2.5rem;
+}
+
+@media only screen and ( width < 45em ) {
+
+    .header {
+        display: block;
+    }
+
+    .header__p-main {
+        font-size: 2rem;
+        width: 15ch;
+    }
+
+    .header__p-not-main {
+        max-width: 32.5ch;
+    }
+
+    .header__grid-left {
+        padding-block-start: 10rem;
+        padding-inline-start: 1.25rem;
+    }
+
+
+    .header__grid-right > img {
+        height: 32.5rem;
+        right: 0;
+    }
+
+    .header__info {
+        display: block;
+        font-size: 1.25rem;
+        text-align: left;
+        max-width: fit-content;
+
+        padding-inline-start: 1rem;
+    }
+
+    .header__info div:nth-child(2) {
+        padding-left: 2rem;
+    }
+
+    .header__info [data-info='members'],
+    .header__info [data-info='customers'],
+    .header__info [data-info='reviews'] {
+        font-size: 2.5rem;
+    }
+
+}

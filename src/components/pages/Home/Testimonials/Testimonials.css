@@ -1,0 +1,85 @@
+.testimonials {
+    background: hsl(250, 97%, 57%, 0.6);
+    background: radial-gradient(circle, rgba(77,41,252,0.6) 0%, rgba(147,194,249,0) 100%); 
+    backdrop-filter: blur(1rem);
+
+    padding-block: 3.5rem;
+}
+
+.testimonials h2 {
+    font-family: var(--ff-poppins);
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    padding-inline: 5rem;
+}
+
+.testimonials > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 60rem;
+    width: 50%;
+
+    margin: auto;
+    padding-block: 1rem;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.testimonials > div > div {
+    padding-block: 1rem;
+    margin-inline: 1rem;
+}
+
+.testimonials img {
+    height: 25rem; width: 100%;
+    border-top-right-radius: 1.5rem; border-top-left-radius: 1.5rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.testimonials div div div {
+    border-left: 1px solid hsl(0, 0%, 96%, 0.3);
+    border-right: 1px solid hsl(0, 0%, 96%, 0.3);
+    border-bottom: 1px solid hsl(0, 0%, 96%, 0.3);
+    border-bottom-left-radius: 1.5rem; border-bottom-right-radius: 1.5rem;
+
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+
+    background-color: hsl(0, 0%, 96%, 0.2);
+    backdrop-filter: blur(1rem);
+}
+
+.testimonials div div h4 {
+    font-family: var(--ff-poppins);
+    font-size: 1.75rem;
+
+    padding-bottom: 1rem;
+}
+
+.testimonials div div p {
+    font-family: var(--ff-poppins);
+    font-size: .85rem;
+}
+
+@media only screen and ( width < 45em ) {
+
+    .testimonials > div {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .testimonials img {
+        height: 20rem; width: 100%;
+    }
+
+}

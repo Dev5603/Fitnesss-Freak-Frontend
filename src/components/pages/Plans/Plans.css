@@ -1,0 +1,168 @@
+.plans {
+    min-height: 100dvh;
+
+    background: hsl(250, 97%, 57%, 0.6);
+    background: radial-gradient(circle, rgba(77,41,252,0.6) 0%, rgba(147,194,249,0) 100%); 
+    backdrop-filter: blur(1rem);
+
+    padding-block: 10rem;
+}
+
+.plans > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans button {
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    width: 15rem;
+
+    background-color: whitesmoke;
+
+    padding-block: 1.25rem;
+}
+
+.plans-data {
+    padding-inline: 3rem;
+    padding-block: 5rem;
+}
+
+.plans-data > div:first-child {
+    display: flex;
+
+    flex-direction: column;
+    width: 70%;
+
+    margin-inline: auto;
+}
+
+.plan {
+    border-radius: 1.5rem;
+
+    background-color: red;
+
+    margin-block: 2rem;
+    padding: 3rem 5rem 3rem 5rem;
+}
+
+.plan:first-child {
+    background: rgb(42,104,172);
+    background: linear-gradient(135deg, rgba(42,104,172,.6) 0%, rgba(255,253,253,.4) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.plan:nth-child(2) {
+    text-align: right;
+
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.6) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.plan:nth-child(3) {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,.4) 0%, rgba(253,29,29,.6) 50%, rgba(252,176,69,.3) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.plan:nth-child(4) {
+    text-align: right;
+
+    background: rgb(42,104,172);
+    background: linear-gradient(135deg, rgba(42,104,172,.6) 0%, rgba(255,253,253,.4) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.plan:nth-child(5) {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.6) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.plan:nth-child(6) {
+    text-align: right;
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,.4) 0%, rgba(253,29,29,.6) 50%, rgba(252,176,69,.3) 100%); 
+    backdrop-filter: blur(1rem);
+}
+
+.name {
+    font-family: var(--ff-poppins);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.plan span {
+    position: relative;
+    top: -.75rem;
+
+    font-family: var(--ff-josefin);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.amount {
+    font-family: var(--ff-poppins);
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+
+.amount::before {
+    content: '₹';
+}
+
+.type {
+    font-family: var(--ff-poppins);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.days {
+    font-family: var(--ff-poppins);
+    font-weight: bold;
+    border-radius: 2rem;
+    width: 100%;
+
+    background-color: whitesmoke;
+    color: black;
+
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    margin-block: 1rem;
+}
+
+@media only screen and ( width < 45em ) {
+
+    .plans button {
+        width: 10rem;
+    }
+
+    .plans-data {
+        padding-inline: .75rem;
+    }
+
+    .plans-data > div:first-child {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .plan span {
+        font-size: 1.25rem;
+    }
+
+    .amount {
+        font-size: 4rem;
+    }
+
+    .plan {
+        padding: 3rem 1.5rem 3rem 1.5rem;
+    }
+
+}

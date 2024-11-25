@@ -1,0 +1,134 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: hsl(250, 97%, 57%, 0.6);
+    background: radial-gradient(circle, rgba(77,41,252,0.6) 0%, rgba(147,194,249,0) 100%); 
+    backdrop-filter: blur(1rem);
+
+    padding-inline: 2.5rem;
+    padding-block: 5rem;
+}
+
+.about__grid-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__grid-left > img:first-child {
+    height: 45rem;
+}
+
+.about__grid-left > img {
+    height: 25rem; width: 100%;
+    object-fit: cover;
+
+    padding-block: 1rem;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.about__grid-left > p {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--ff-poppins);
+    font-weight: bold;
+    font-size: 2.5rem;
+
+    padding-inline: 1rem;
+}
+
+.about__grid-right {
+    display: grid;
+    place-content: center;
+
+    padding-inline: 1.5rem;
+}
+
+.about__grid-right h2 {
+    font-family: var(--ff-poppins);
+    font-size: .75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.p-main {
+    font-family: var(--ff-poppins);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 20ch;
+}
+
+.motivation {
+    font-family: var(--ff-poppins);
+    max-width: 40ch;
+
+    background-color: hsl(0, 0%, 96%, 0.2);
+    backdrop-filter: blur(1rem);
+
+    padding: 1.5rem;
+    margin: 2rem 0 5rem 0;
+}
+
+.about__grid-right > div {
+    display: flex;
+    align-items: center;
+}
+
+.about__grid-right img {
+    width: 7.5rem; height: 7.5rem;
+    object-fit: cover;
+}
+
+.about__grid-right div p {
+    font-family: var(--ff-poppins);
+
+    padding-inline: 1.5rem;
+}
+
+.ceo {
+    color: rgb(168, 168, 168);
+}
+
+@media only screen and ( width < 55em ) {
+
+    .about {
+        display: block;
+        padding-block: 0;
+        padding-inline: 1.5rem;
+    }
+
+    .about__grid-left {
+        display: block;
+    }
+
+    .about__grid-left > p {
+        text-align: center;
+
+        padding-block: 1.5rem;
+    }
+
+    .about__grid-left > img:first-child {
+        height: 20rem;
+    }
+
+    .about__grid-left > img {
+        height: 20rem;
+    }
+
+    .about__grid-right {
+        display: block;
+
+        padding-inline: 0;
+        padding-block: 2.5rem;
+    }
+
+    .p-main {
+        font-size: 1.5rem;
+    }
+
+}
