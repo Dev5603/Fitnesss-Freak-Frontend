@@ -58,17 +58,17 @@ const Contact = forwardRef((props, ref) => {
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" onChange={handleChange} value={formData.name} />
+              <input type="text" name="name" id="name" onChange={handleChange} value={formData.name} required />
             </div>
 
             <div>
               <label htmlFor="number">Number</label>
-              <input type="text" name="number" id="number" maxLength={10} onChange={handleChange} value={formData.number} />
+              <input type="text" name="number" id="number" maxLength={10} onChange={handleChange} value={formData.number} required />
             </div>
 
             <div>
               <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" onChange={handleChange} value={formData.email} />
+              <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" onChange={handleChange} value={formData.email} required />
             </div>
 
             <button type="submit">{loading ? 'Loading' : 'Submit'}</button>

@@ -2,14 +2,18 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Slider.css'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
-import img1 from '../../../../assets/images/11.jpg'
-import img2 from '../../../../assets/images/21.jpg'
-import img3 from '../../../../assets/images/31.jpg'
-import img4 from '../../../../assets/images/41.jpg'
-import img5 from '../../../../assets/images/12.jpg'
-import img6 from '../../../../assets/images/22.jpg'
-import img7 from '../../../../assets/images/32.jpg'
-import img8 from '../../../../assets/images/42.jpg'
+import img1 from '../../../../assets/images/client/client1.png'
+import img2 from '../../../../assets/images/client/client4.png'
+import img3 from '../../../../assets/images/client/client3.png'
+import img4 from '../../../../assets/images/services.png'
+import img5 from '../../../../assets/images/staff/staff1.png'
+import img6 from '../../../../assets/images/staff/staff4.png'
+import img7 from '../../../../assets/images/staff/staff3.png'
+import img8 from '../../../../assets/images/staff/staff2.png'
+import img9 from '../../../../assets/images/gym/gym3.png'
+import img10 from '../../../../assets/images/gym/gym2.png'
+import img11 from '../../../../assets/images/gym/gym1.png'
+import img12 from '../../../../assets/images/gym/gym4.png'
 
 const Slider = () => {
   // State to keep track of the active index (for both items and thumbnails)
@@ -119,10 +123,10 @@ const Slider = () => {
               </div>
 
               <div className={`item ${activeIndex === 2 ? 'active' : ''}`} ref={(el) => (items.current[2] = el)}>
-                <img src={img1} alt=""/>
-                <img src={img2} alt=""/>
-                <img src={img3} alt=""/>
-                <img src={img4} alt=""/>
+                <img src={img9} alt=""/>
+                <img src={img10} alt=""/>
+                <img src={img11} alt=""/>
+                <img src={img12} alt=""/>
               </div>
             </div>
           </div>

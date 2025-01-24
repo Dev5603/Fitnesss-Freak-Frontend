@@ -63,30 +63,30 @@
 }
 
 .plan:nth-child(3) {
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,.4) 0%, rgba(253,29,29,.6) 50%, rgba(252,176,69,.3) 100%); 
+    background: rgb(42,104,172);
+    background: linear-gradient(135deg, rgba(42,104,172,.6) 0%, rgba(255,253,253,.4) 100%); 
     backdrop-filter: blur(1rem);
 }
 
 .plan:nth-child(4) {
     text-align: right;
 
-    background: rgb(42,104,172);
-    background: linear-gradient(135deg, rgba(42,104,172,.6) 0%, rgba(255,253,253,.4) 100%); 
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.6) 100%); 
     backdrop-filter: blur(1rem);
 }
 
 .plan:nth-child(5) {
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.6) 100%); 
+    background: rgb(42,104,172);
+    background: linear-gradient(135deg, rgba(42,104,172,.6) 0%, rgba(255,253,253,.4) 100%); 
     backdrop-filter: blur(1rem);
 }
 
 .plan:nth-child(6) {
     text-align: right;
 
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,.4) 0%, rgba(253,29,29,.6) 50%, rgba(252,176,69,.3) 100%); 
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.6) 100%); 
     backdrop-filter: blur(1rem);
 }
 

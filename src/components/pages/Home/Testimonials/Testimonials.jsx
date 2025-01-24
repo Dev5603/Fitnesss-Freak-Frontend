@@ -1,9 +1,10 @@
 import React from 'react'
 import './Testimonials.css'
 
-import testmonial1 from '../../../../assets/images/1.jpg'
-import testmonial2 from '../../../../assets/images/2.jpg'
-import testmonial3 from '../../../../assets/images/3.jpg'
+import testmonial1 from '../../../../assets/images/testimony1.png'
+import testmonial2 from '../../../../assets/images/testimony2.png'
+import testmonial3 from '../../../../assets/images/testimony3.png'
+import testmonial4 from '../../../../assets/images/testimony4.png'
 
 const Testimonials = () => {
   return (
@@ -34,13 +35,24 @@ const Testimonials = () => {
                     </div>
                 </div>
 
-                <div className='grid-col-span-2'>
+                <div className=''>
                     <img src={testmonial3} alt="" />
 
                     <div>
                         <h4>Ankit Lokare</h4>
                         <p>
-                            Fitness Freak has a supportive community for achieving fitness goals. They host motivating events, provide great equipment, and have knowledgeable trainers like Harsh and floor manager Akshay.
+                            Fitness Freak has a supportive community for achieving fitness goals. They host motivating events, provide great equipment, and have knowledgeable trainers like Harsh and floor manager Akshay. 
+                        </p>
+                    </div>
+                </div>
+
+                <div className=''>
+                    <img src={testmonial4} alt="" />
+
+                    <div>
+                        <h4>Sanjit Pasi</h4>
+                        <p>
+                            Spacious gym. Trainers are very friendly and supportive. They are well educated and knowledgeable. Kudos to Satyam Sir. Highly recommend this gym for fitness enthusiasts!
                         </p>
                     </div>
                 </div>

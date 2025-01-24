@@ -1,8 +1,8 @@
 import React from 'react'
 import './About.css'
 
-import img1 from '../../../../assets/images/12.jpg'
-import img2 from '../../../../assets/images/22.jpg'
+import img1 from '../../../../assets/images/gym/gym2.png'
+import img2 from '../../../../assets/images/gym/gym4.png'
 import avdhut from '../../../../assets/images/avdhut.png'
 
 const About = () => {

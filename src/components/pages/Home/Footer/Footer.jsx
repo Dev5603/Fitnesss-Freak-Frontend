@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
@@ -9,10 +10,10 @@ const Footer = () => {
 
             <ul className='flex'>
                 <li>
-                    <a href="">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href="">Plans</a>
+                    <Link to="/plans">Plans</Link>
                 </li>
                 <li>
                     <a href="">Contact</a>

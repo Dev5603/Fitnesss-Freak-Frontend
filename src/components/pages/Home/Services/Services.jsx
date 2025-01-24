@@ -1,7 +1,7 @@
 import React from 'react'
 import './Services.css'
 
-import servicesImg from '../../../../assets/images/12.jpg'
+import servicesImg from '../../../../assets/images/gym/gym1.png'
 import twentyIcon from '../../../../assets/svg/twenty.svg'
 import steamIcon from '../../../../assets/svg/steam.svg'
 import machineIcon from '../../../../assets/svg/machine.svg'
